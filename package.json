@@ -1,0 +1,39 @@
+{
+  "name": "isvitlo-tg-bot",
+  "version": "1.0.0",
+  "description": "bot",
+  "scripts": {
+    "prepare": "husky",
+    "build": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node build/src/index.js",
+    "lint": "eslint ./src ./tests --ext .ts",
+    "lint:fix": "eslint ./src ./tests --ext .ts --fix",
+    "prettier:check": "prettier --check src/**/*.ts ",
+    "prettier:fix": "prettier --write src/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmRud/iSvitloTGBot.git"
+  },
+  "keywords": [],
+  "author": "vinisaveg",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.25",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.2.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.64.0"
+  }
+}
